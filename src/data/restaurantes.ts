@@ -10,54 +10,51 @@ export const restaurantes = [
     menu: [
       {
         id: "101",
-        nome: "Rabo de davi assado",
+        nome: "Pizza doce que nao e doce",
         descricao: "Molho de tomate, mussarela fresca e manjericão",
-        preco: 4.90,
-        foto: "/imagens/margherita.jpg"
+        foto: "/imagens/margherita.jpg",
+        categoria: "Pizzas",
+        tamanhos: [
+          
+          { id: "101-G", tamanho: "Grande", preco: 49.90 }
+        ]
       },
       {
         id: "102",
         nome: "Pizza Calabresa",
         descricao: "Molho de tomate, mussarela, calabresa e cebola",
-        preco: 49.90,
-        foto: "/imagens/calabresa.jpg"
-      }
-    ]
-  },
-  {
-    id: "2",
-    nome: "Hamburgueria Artesanal",
-    categoria: "Lanches",
-    foto: "/img/restaurantes/images.jpeg",
-    tempoEntrega: "20-30 min",
-    avaliacao: 4.7,
-    telefone: "5588988083571",
-    menu: [
+        foto: "/imagens/calabresa.jpg",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "102-P", tamanho: "Pequena", preco: 29.90 },
+          { id: "102-G", tamanho: "Grande", preco: 49.90 }
+        ]
+      },
       {
         id: "201",
-        nome: "Cheeseburger Clássico",
-        descricao: "Pão brioche, hambúrguer 180g e queijo cheddar",
-        preco: 28.90,
-        foto: "/imagens/cheeseburger.jpg"
-      }
-    ]
-  },
-  {
-    id: "2",
-    nome: "Hamburgueria Artesanal",
-    categoria: "Lanches",
-    foto: "/img/restaurantes/images.jpeg",
-    tempoEntrega: "20-30 min",
-    avaliacao: 4.7,
-    telefone: "5588988083571",
-    menu: [
+        nome: "Filé com Fritas",
+        descricao: "Filé bovino com batata frita crocante",
+        foto: "/imagens/file-fritas.jpg",
+        categoria: "Prato Principal",
+        preco: 39.90
+      },
       {
-        id: "201",
-        nome: "Cheeseburger Clássico",
-        descricao: "Pão brioche, hambúrguer 180g e queijo cheddar",
-        preco: 28.90,
-        foto: "/imagens/cheeseburger.jpg"
+        id: "301",
+        nome: "Coca-Cola 2L",
+        descricao: "Refrigerante Coca-Cola 2 litros",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "Bebidas",
+        preco: 9.90
+      },
+      {
+        id: "301",
+        nome: "Coca-Cola 2L",
+        descricao: "Refrigerante Coca-Cola 2 litros",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "Prato Principal",
+        preco: 9.90
       }
     ]
   }
+  
 ];
