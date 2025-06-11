@@ -1,18 +1,18 @@
 import { restaurantes } from '@/data/restaurantes';
-import FoodCard from '@/components/FoodCard'; // Nome corrigido
+import FoodCard from '@/components/FoodCard'; 
+import { Metadata } from 'next';
 
-interface RestaurantePageProps {
+interface PageProps {
   params: { id: string }
 }
-
-export async function generateMetadata({ params }: RestaurantePageProps) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const restaurante = restaurantes.find(r => r.id === params.id);
   return {
     title: `${restaurante?.nome || 'Restaurante'} | MeuApp`
   };
 }
 
-export default function RestaurantePage({ params }: RestaurantePageProps) {
+export default function RestaurantePage({ params }: PageProps) {
   const restaurante = restaurantes.find(r => r.id === params.id);
   
   if (!restaurante) return <p>Restaurante não encontrado</p>;
