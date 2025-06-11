@@ -8,7 +8,7 @@ import CartIcon from '@/components/CartIcon';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Delivery App',
+  title: 'Briso Delivery ',
   description: 'Seu app de delivery favorito',
 };
 
@@ -22,10 +22,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <CartProvider>
           <header className="bg-red-500 text-white p-4 flex justify-between items-center">
-            <h1 className="text-xl font-bold">Delivery App</h1>
+            <h1 className="text-xl font-bold">Briso Delivery</h1>
             <CartIcon />
           </header>
-          {children}
+          <main>{children}</main>
           <Cart />
         </CartProvider>
       </body>

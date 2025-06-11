@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center">
-      <h1 className="text-4xl font-bold mb-2">Página não encontrada</h1>
+    <main className="flex flex-col items-center justify-center min-h-screen p-4 text-center bg-gray-50">
+      <h1 className="text-4xl font-bold mb-2 text-red-600">Página não encontrada</h1>
       <p className="text-lg text-gray-600 mb-6">
         O restaurante que você procura não existe ou foi removido.
       </p>
@@ -14,6 +14,6 @@ export default function NotFound() {
       >
         Voltar para restaurantes
       </Link>
-    </div>
+    </main>
   );
 }

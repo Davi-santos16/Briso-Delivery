@@ -21,7 +21,8 @@ export default function Cart() {
   const handleCheckout = () => {
     if (cart.length === 0 || !restaurante) return;
 
-    const telefoneRestaurante = restaurante.telefone;
+    // Remove tudo que não for número do telefone
+    const telefoneRestaurante = restaurante.telefone.replace(/\D/g, '');
 
     let message = `Olá ${restaurante.nome}, gostaria de fazer um pedido:\n\n`;
 
@@ -37,6 +38,7 @@ export default function Cart() {
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${telefoneRestaurante}?text=${encodedMessage}`, '_blank');
 
+    alert('Seu pedido foi enviado para o WhatsApp!');
     clearCart();
     toggleCart();
   };
@@ -88,7 +90,7 @@ export default function Cart() {
 
                     <div className="flex items-center mt-2">
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantidade - 1)}
+                        onClick={() => updateQuantity(item.id, Math.max(1, item.quantidade - 1))}
                         className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"
                       >
                         -

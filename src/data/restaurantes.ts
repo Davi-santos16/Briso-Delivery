@@ -55,6 +55,9 @@ export const restaurantes = [
         preco: 9.90
       }
     ]
-  }
+  },
+ 
+  
+  
   
 ];
