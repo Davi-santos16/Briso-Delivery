@@ -46,7 +46,7 @@ export default function Cart() {
   if (!isCartOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
+    <div className="fixed inset-0 w-full h-full bg-white bg-opacity-50 z-50 flex justify-center">
       <div className="bg-white w-full max-w-sm sm:max-w-md md:max-w-md lg:max-w-lg h-full overflow-y-auto shadow-lg">
         <div className="p-4 border-b flex justify-between items-center">
           <h2 className="text-xl font-bold">Carrinho</h2>
