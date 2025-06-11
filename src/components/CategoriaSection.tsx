@@ -1,8 +1,8 @@
 'use client'
-
 import { useState } from 'react';
 import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
+import { RestauranteCarrinho } from '@/context/CartContext';
 
 interface Tamanho {
   tamanho: string;
@@ -13,7 +13,7 @@ interface Item {
   id: string;
   nome: string;
   descricao: string;
-  foto?: string;
+  foto: string;
   preco?: number;
   tamanhos?: Tamanho[];
 }
@@ -23,22 +23,7 @@ interface Categoria {
   itens: Item[];
 }
 
-interface Restaurante {
-  id: string;
-  nome: string;
-  telefone: string;
-  // outros campos que tiver
-}
-
-interface CartItem {
-  id: string;
-  nome: string;
-  preco: number;
-  foto: string;
-  quantidade: number;
-}
-
-export default function CategoriaSection({ categoria, restaurante }: { categoria: Categoria; restaurante: Restaurante }) {
+export default function CategoriaSection({ categoria, restaurante }: { categoria: Categoria; restaurante: RestauranteCarrinho }) {
   return (
     <div className="mb-8" id={categoria.categoria.replace(/\s+/g, '-').toLowerCase()}>
       <h2 className="text-xl font-bold mb-4 border-b pb-2">{categoria.categoria}</h2>
@@ -55,7 +40,7 @@ export default function CategoriaSection({ categoria, restaurante }: { categoria
   );
 }
 
-function ItemCard({ item, restaurante }: { item: Item; restaurante: Restaurante }) {
+function ItemCard({ item, restaurante }: { item: Item; restaurante: RestauranteCarrinho }) {
   const [tamanhoSelecionado, setTamanhoSelecionado] = useState<number>(0);
   const { addToCart } = useCart();
 
@@ -70,20 +55,13 @@ function ItemCard({ item, restaurante }: { item: Item; restaurante: Restaurante 
 
     if (preco === undefined) return;
 
-    const foto = item.foto ?? '/images/fallback.png'; // fallback caso não tenha foto
-    const id = item.tamanhos && item.tamanhos.length > 0
-      ? `${item.id}-${tamanhoSelecionado}`
-      : item.id;
-
-    const cartItem: CartItem = {
-      id,
+    addToCart({
+      id: item.id + (item.tamanhos ? `-${tamanhoSelecionado}` : ''),
       nome: nomeCompleto,
-      preco,
-      foto,
+      preco: preco,
+      foto: item.foto,
       quantidade: 1,
-    };
-
-    addToCart(cartItem, restaurante);
+    }, restaurante);
   };
 
   return (
@@ -91,7 +69,7 @@ function ItemCard({ item, restaurante }: { item: Item; restaurante: Restaurante 
       <div className="flex gap-4">
         <div className="relative w-24 h-24 flex-shrink-0">
           <Image
-            src={item.foto ?? '/images/fallback.png'}
+            src={item.foto}
             alt={item.nome}
             fill
             className="object-cover rounded"
@@ -122,7 +100,7 @@ function ItemCard({ item, restaurante }: { item: Item; restaurante: Restaurante 
               </div>
             </div>
           )}
-
+          
           {!item.tamanhos && item.preco !== undefined && (
             <p className="font-bold mt-2 text-lg">R$ {item.preco.toFixed(2)}</p>
           )}

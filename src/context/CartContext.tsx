@@ -9,7 +9,7 @@ interface CartItem {
   foto: string;
 }
 
-interface RestauranteCarrinho {
+export interface RestauranteCarrinho {
   id: string;
   nome: string;
   telefone: string;
