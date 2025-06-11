@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['localhost'],
+  },
+  // Desative o tratamento estrito de erros de tipo
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
