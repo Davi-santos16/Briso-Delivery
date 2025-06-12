@@ -144,17 +144,7 @@ export const restaurantes = [
           { id: "113-G", tamanho: "Grande", preco: 45.00 }
         ]
       },
-      {
-        id: "114",
-        nome: "ICARAIZINHO",
-        descricao: "MUSSARELA, FRANGO, OVO E REQUEIJÃO CREMOSO",
-        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
-        categoria: "Pizzas",
-        tamanhos: [
-          { id: "114-M", tamanho: "Média", preco: 40.00  },
-          { id: "114-G", tamanho: "Grande", preco: 45.00 }
-        ]
-      },
+    
       {
         id: "115",
         nome: "ICARAIZINHO",
@@ -199,13 +189,342 @@ export const restaurantes = [
           { id: "117-G", tamanho: "Grande", preco: 60.00 }
         ]
       },
+       {
+        id: "118",
+        nome: "CALABRESA CHEESE",
+        descricao: "MUSSARELA, CALABRESA, BACON E CREAM CHESSE",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "118-M", tamanho: "Média", preco: 45.00  },
+          { id: "118-G", tamanho: "Grande", preco: 50.00 }
+        ]
+      },
+       {
+        id: "119",
+        nome: "TOMATE SECO",
+        descricao: "MUSSARELA, TOMATE, SECO E RÚCULA",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "119-M", tamanho: "Média", preco: 50.00  },
+          { id: "119-G", tamanho: "Grande", preco: 55.00 }
+        ]
+      },
+      {
+        id: "120",
+        nome: "MUCUMÃ",
+        descricao: "MUSSARELA, CALABRESA, BACON E CHAMPIGNON",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "120-M", tamanho: "Média", preco: 50.00  },
+          { id: "120-G", tamanho: "Grande", preco: 55.00 }
+        ]
+      },
+      {
+        id: "121",
+        nome: "SANTARÉM",
+        descricao: "MUSSARELA, PEPPERONI, BACON E CHAMPIGNON",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "121-M", tamanho: "Média", preco: 55.00  },
+          { id: "121-G", tamanho: "Grande", preco: 60.00 }
+        ]
+      },
+         {
+        id: "122",
+        nome: "ATUM",
+        descricao: "MUSSARELA, ATUM, CEBOLA E PIMENTA DO REINO",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "122-M", tamanho: "Média", preco: 50.00  },
+          { id: "122-G", tamanho: "Grande", preco: 55.00 }
+        ]
+      },
+       {
+        id: "123",
+        nome: "CAMARÃO",
+        descricao: "MUSSARELA, CAMARÃO E ALHO",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "123-M", tamanho: "Média", preco: 52.00  },
+          { id: "123-G", tamanho: "Grande", preco: 57.00 }
+        ]
+      },
+        {
+        id: "124",
+        nome: "CEARENSE",
+        descricao: "MUSSARELA, CARNE DE SOL, CEBOLA ROXA E CATUPIRY",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "124-M", tamanho: "Média", preco: 56.00  },
+          { id: "124-G", tamanho: "Grande", preco: 62.00 }
+        ]
+      },
+         {
+        id: "125",
+        nome: "FRANGO CATUPIIRY",
+        descricao: "MUSSARELA, FRANGO E CATUPIRY",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "125-M", tamanho: "Média", preco: 53.00  },
+          { id: "125-G", tamanho: "Grande", preco: 58.00 }
+        ]
+      },
+      {
+        id: "126",
+        nome: "CAETANOS",
+        descricao: "MUSSARELA, BACON, MILHOE CHEDDAR",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "126-M", tamanho: "Média", preco: 48.00  },
+          { id: "126-G", tamanho: "Grande", preco: 53.00 }
+        ]
+      },
+      {
+        id: "127",
+        nome: "MOITAS",
+        descricao: "MUSSARELA, CALABRESA, MILHOE CHEDDAR",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "127-M", tamanho: "Média", preco: 48.00  },
+          { id: "127-G", tamanho: "Grande", preco: 52.00 }
+        ]
+      },
+      {
+        id: "128",
+        nome: "PIZZA BAIANA",
+        descricao: "MUSSARELA, PIMENTA CALABRESA E MOLHO DE PIMENTA",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "128-M", tamanho: "Média", preco: 37.00  },
+          { id: "128-G", tamanho: "Grande", preco: 42.00 }
+        ]
+      },
+       {
+        id: "129",
+        nome: "PIZZA VILLA NOVA",
+        descricao: "MUSSARELA, LOMBO CANADENSE, CEBOLA E CATUPIRY",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "129-M", tamanho: "Média", preco: 53.00  },
+          { id: "129-G", tamanho: "Grande", preco: 58.00 }
+        ]
+      },
+
+       {
+        id: "130",
+        nome: "CHOCOLATE",
+        descricao: "CREME DE LEITE E CHOCOLATE AO LEITE",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Pizzas",
+        tamanhos: [
+          { id: "130-M", tamanho: "Média", preco: 40.00  },
+          { id: "130-G", tamanho: "Grande", preco: 45.00 }
+        ]
+      },
+      {
+        id: "131",
+        nome: "REQUEIJÃO",
+       
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Bordas",
+        preco: 13.00,
+      },
+      {
+        id: "132",
+        nome: "CHEDDAR",
+        
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Bordas",
+        preco: 16.00,
+      },
+      {
+        id: "133",
+        nome: "CHOCOLATE",
+        
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "Bordas",
+        preco: 16.00,
+      },
+      {
+        id: "134",
+        nome: "OVO",
+        
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "ADICIONAIS",
+        preco: 5.00,
+      },
+       {
+        id: "135",
+        nome: "BACON",
+        
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "ADICIONAIS",
+        preco: 7.00,
+      },
+      {
+        id: "136",
+        nome: "X-BURGER",
+        descricao: "ALFACE, TOMATE, CARNE, CHEDDAR E MOLHO BARBECUE",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 23.00
+      },
+      {
+        id: "137",
+        nome: "X-BACON",
+        descricao: "ALFACE, TOMATE, CARNE, CHEDDAR, BACON  E MOLHO BARBECUE",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 25.00
+      },
+      {
+        id: "138",
+        nome: "X-CALABRESA",
+        descricao: "CARNE, CALABRESA, CEBOLA E REQUEIJÃO CREMOSO",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 21.00
+      },
+      {
+        id: "139",
+        nome: "X-BRITTO´S",
+        descricao: "ALFACE, TOMATE, CARNE, CHEDDAR E GORGONZOLA",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 27.00
+      },
+      {
+        id: "140",
+        nome: "X-CASA",
+        descricao: "ALFACE, TOMATE, CARNE, CHEDDAR, OVO E BACON",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 26.00
+      },
+       {
+        id: "141",
+        nome: "X-FRANGO",
+        descricao: "ALFACE, TOMATE, FRANGO, MUSSARELA, REQUEIJÃO E MOLHO BARBBECUE",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 20.00
+      },
+       {
+        id: "142",
+        nome: "X-DUPLO",
+        descricao: "ALFACE, TOMATE, 2X CARNE, 2X CHEDDAR E MOLHO BARBECUE",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 28.00
+      },
+          {
+        id: "143",
+        nome: "X-CAMARÃO",
+        descricao: "ALFACE, TOMATE, CAMARÃO, MUSSARELA E REQUEIJÃO",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 31.00
+      },
+           {
+        id: "144",
+        nome: "BURGUER ICARAIZINHO",
+        descricao: "ALFACE, TOMATE, CARNE, CHEDDAR, CEBOLA ROXA E PICLES",
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "HAMBÚRGUER",
+        preco: 29.00
+      },
+           {
+        id: "145",
+        nome: "BATATA FRITA",
+       
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "BATATA FRITA",
+        preco: 22.00
+      },
+           {
+        id: "146",
+        nome: "BATATA COM CHEDDAR",
+       
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "BATATA FRITA",
+        preco: 27.00
+      },
+           {
+        id: "147",
+        nome: "BATATA, CHEDDAR E BACON",
+       
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "BATATA FRITA",
+        preco: 32.00
+      },
+           {
+        id: "148",
+        nome: "BATATA COM CALABRESA",
+       
+        foto: "/imagens/coca-cola.jpg",
+        categoria: "BATATA FRITA",
+        preco: 32.00
+      },
+       {
+        id: "149",
+        nome: "ICARAIZINHO",
+        descricao: "MUSSARELA, FRANGO, OVO, REQUEIJÃO CREMOSO E MILHO" ,
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "CALZONE",
+        preco: 49.00
+      },
+       {
+        id: "150",
+        nome: "DA`CASA",
+        descricao: "MUSSARELA, PRESUNTO, BACON, CALABRESA, TOMATE,CEBOLA E CREAM CHEESE" ,
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "CALZONE",
+        preco: 49.00
+      },
+       {
+        id: "151",
+        nome: "OVO",
+
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "ADICIONAIS HAMBÚGUERES E CIA",
+        preco: 3.00
+      },
+       {
+        id: "152",
+        nome: "BACON",
+
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "ADICIONAIS HAMBÚGUERES E CIA",
+        preco: 5.00
+      },
+       {
+        id: "153",
+        nome: "CARNE",
+
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
+        categoria: "ADICIONAIS HAMBÚGUERES E CIA",
+        preco: 9.00
+      },
+      
 
 
       {
         id: "301",
         nome: "Coca-Cola 2L",
         descricao: "Refrigerante Coca-Cola 2 litros",
-        foto: "/imagens/coca-cola.jpg",
+        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
         categoria: "Bebidas",
         preco: 9.90
       }
