@@ -23,7 +23,7 @@ export default function RestaurantePage({ params }: PageProps) {
         <h1 className="text-3xl font-bold">{restaurante.nome}</h1>
         <p className="text-sm text-gray-600">Telefone: {restaurante.telefone}</p>
       </header>
-      <FoodCard menu={restaurante.menu} restaurante={restaurante} />
+      <FoodCard menu={(restaurante as any).menu} restaurante={restaurante} />
     </main>
   );
 }
