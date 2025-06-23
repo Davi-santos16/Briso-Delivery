@@ -518,19 +518,138 @@ export const restaurantes = [
         preco: 9.00
       },
       
-
-
-      {
-        id: "301",
-        nome: "Coca-Cola 2L",
-        descricao: "Refrigerante Coca-Cola 2 litros",
-        foto: "/img/restaurantes/britos/cardapio/pizzas/Calabresa.avif",
-        categoria: "Bebidas",
-        preco: 9.90
-      }
-     
     ]
   },
+  {
+    id: "2",
+    nome: "Mouras Pizzas",
+    categoria: "Pizzaria",
+    foto: "/img/restaurantes/Moura/Imagem do WhatsApp de 2025-06-23 à(s) 18.15.00_8b3649c3.jpg",
+    tempoEntrega: "30-40 min",
+    avaliacao: 4.8,
+    telefone: "558598863050",
+    menu:[
+      {
+        id: "501",
+        nome: "frango com catupiry",
+        descricao: "Molho especial, frango desfiado, mussarela catupiry e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/frangocomcatupiry.jpg",
+        categoria: "Pizzas",
+        preco:38
+      },
+      {
+        id: "502",
+        nome: "calabresa",
+        descricao: "Molho especial, mussarela, calabresa cebola e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/Imagem do WhatsApp de 2025-06-23 à(s) 18.13.19_795c5fa5.jpg",
+        categoria: "Pizzas",
+        preco:38
+      },
+      {
+        id: "503",
+        nome: "A moda",
+        descricao: "Molho especial, frango desfiado temperado, mussarela, calabresa, bacon e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/AModa.jpg",
+        categoria: "Pizzas",
+        preco:42
+      },
+      {
+        id: "504",
+        nome: "mussarela",
+        descricao: "Molho especial, mussarela, tomate e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/Mussarela.jpg",
+        categoria: "Pizzas",
+        preco:38
+      },
+      {
+        id: "505",
+        nome: "mista",
+        descricao: "Molho especial, mussarela, presunto e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/Mista.jpg",
+        categoria: "Pizzas",
+        preco:38
+      },
+      {
+        id: "506",
+        nome: "calabresa / bacon",
+        descricao: "Calabresa: Molho especial, mussarela, calabresa, cebola e orégano.Bacon: molho especial, mussarela, bacon em cubos tomate e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/CalabresacomBacon.jpg",
+        categoria: "Pizzas",
+        preco:36
+      },
+       {
+        id: "507",
+        nome: "Calabresa / mista",
+        descricao: "Calabresa: molho especial, mussarela, calabresa, cebola e orégano  Mista: molho especial, presunto, mussarela e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/camista.jpg",
+        categoria: "Pizzas",
+        preco:34
+      },
+      {
+        id: "508",
+        nome: "Calabresa / frango com catupiry",
+        descricao: "Calabresa: molho especial, mussarela, calabresa, cebola e orégano.Frango: molho especial, frango desfiado temperado, mussarela, catupiry e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/pizzas/CalabresaFrangocomCat.jpg",
+        categoria: "Pizzas",
+        preco:36
+      },
+      {
+        id: "509",
+        nome: "Refrigerante Coca-Cola 2L",
+        foto: "/img/restaurantes/Moura/cardapio/Bebidas/coca2.jpg",
+        categoria: "Bebidas",
+        preco:12
+      },
+      {
+        id: "511",
+        nome: "Coca cola 2,5L",
+        foto: "/img/restaurantes/Moura/cardapio/Bebidas/Coca2,5.jpg",
+        categoria: "Bebidas",
+        preco:12
+      },
+      {
+        id: "512",
+        nome: "Refrigerante Coca-Cola 1,5L",
+        foto: "/img/restaurantes/Moura/cardapio/Bebidas/Imagem do WhatsApp de 2025-06-23 à(s) 18.22.28_373f0b7a.jpg",
+        categoria: "Bebidas",
+        preco:10
+      },
+        {
+        id: "513",
+        nome: "Calzone calabresa",
+        decricao:"Molho, calabresa, mussarela, cebola e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/Calzone/Calzone.jpg",
+        categoria: "CALZONE",
+        preco:10
+      },
+      {
+        id: "514",
+        nome: "Calzone frango",
+        decricao:"Molho, frango, mussarela e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/Calzone/Calzone.jpg",
+        categoria: "CALZONE",
+        preco:12
+      },
+       {
+        id: "515",
+        nome: "Calzone misto  ",
+        decricao:"Molho, frango, mussarela e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/Calzone/Calzone.jpg",
+        categoria: "CALZONE",
+        preco:10
+      },
+      {
+        id: "516",
+        nome: "Calzone bacon",
+        decricao:"Molho, frango, mussarela e orégano.",
+        foto: "/img/restaurantes/Moura/cardapio/Calzone/Calzone.jpg",
+        categoria: "CALZONE",
+        preco:12
+      },
+      
+    ]
+
+  }
  
   
   
