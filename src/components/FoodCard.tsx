@@ -89,11 +89,11 @@ export default function Menu({ menu, restaurante }: MenuProps) {
                 className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-shadow bg-white flex flex-col md:flex-row"
               >
                 {/* Imagem do produto */}
-                <div className="md:w-40 h-40 md:h-auto relative">
+                <div className="md:w-40 w-full flex items-center justify-center bg-gray-100 md:rounded-l-2xl overflow-hidden">
                   <img
                     src={item.foto}
                     alt={item.nome}
-                    className="object-cover w-full h-full md:rounded-l-2xl"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
 

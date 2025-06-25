@@ -46,11 +46,11 @@ export default function Cart() {
   if (!isCartOpen) return null;
 
   return (
-    <div className="fixed inset-0 w-full h-full bg-white bg-opacity-50 z-50 flex justify-center">
+    <div className="fixed inset-0  w-full h-full bg-white bg-opacity-50 z-50  flex justify-center">
       <div className="bg-white w-full max-w-sm sm:max-w-md md:max-w-md lg:max-w-lg h-full overflow-y-auto shadow-lg">
-        <div className="p-4 border-b flex justify-between items-center">
-          <h2 className="text-xl font-bold">Carrinho</h2>
-          <button onClick={toggleCart} className="text-gray-500 hover:text-gray-700 text-2xl">
+        <div className="p-4 border-b bg-red-600 flex justify-between align-center w-full ">
+          <h2 className="text-xl text-center font-bold">Carrinho</h2>
+          <button onClick={toggleCart} className="text-black hover:text-gray-700 text-2xl">
             ✕
           </button>
         </div>
@@ -69,7 +69,7 @@ export default function Cart() {
           <>
             <div className="p-4">
               {restaurante && (
-                <div className="mb-4 p-2 bg-gray-100 rounded-lg">
+                <div className=" flex justify-center mb-4 p-2 bg-gray-300 rounded-lg">
                   <p className="font-bold">{restaurante.nome}</p>
                 </div>
               )}
