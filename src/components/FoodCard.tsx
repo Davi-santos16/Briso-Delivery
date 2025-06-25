@@ -89,11 +89,11 @@ export default function Menu({ menu, restaurante }: MenuProps) {
                 className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-shadow bg-white flex flex-col md:flex-row"
               >
                 {/* Imagem do produto */}
-                <div className="md:w-40 w-full flex items-center justify-center bg-gray-100 md:rounded-l-2xl overflow-hidden">
+                <div className="w-full sm:w-40 aspect-square overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none">
                   <img
                     src={item.foto}
                     alt={item.nome}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
@@ -111,10 +111,9 @@ export default function Menu({ menu, restaurante }: MenuProps) {
                             key={tamanho.id}
                             onClick={() => handleSelectSize(item.id, tamanho.id)}
                             className={`px-3 py-1 text-sm rounded-full border transition-all font-medium
-                              ${
-                                selectedSizes[item.id] === tamanho.id
-                                  ? 'bg-blue-600 text-white border-blue-600'
-                                  : 'bg-gray-100 text-gray-800 border-gray-300 hover:bg-gray-200'
+                              ${selectedSizes[item.id] === tamanho.id
+                                ? 'bg-blue-600 text-white border-blue-600'
+                                : 'bg-gray-100 text-gray-800 border-gray-300 hover:bg-gray-200'
                               }`}
                           >
                             {tamanho.tamanho} • R$ {tamanho.preco.toFixed(2)}
